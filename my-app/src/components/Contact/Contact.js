@@ -1,5 +1,7 @@
 import React from 'react'
 import './Contact.css'
+import {FaPhone} from "react-icons/fa"
+
 // import { themeContext } from "../../Context";
 // import { useState,  useContext, useRef} from "react";
 
@@ -7,6 +9,7 @@ import './Contact.css'
 function Contact() {
     return (
         // NavBar Goes Here
+        <div className='Main-div'>
         <div className='container'>
         <div className='contact-form' id='Contact'>
              <div className='c-left'>
@@ -32,12 +35,25 @@ function Contact() {
                          {/* <span>{done && "Thank you for Contacting Me!"}</span> */}
                     </form>
                  </div>
-                 <div className='image-contact'>
-                    <img src='./pictures/giraffes.jpg' alt='giraffe'/>
-                 </div>
+                 {/* <div className='image-contact'>
+                    <img src='./pictures/img.png' alt='giraffe'/>
+                 </div> */}
             </div>
             </div>
-            
+            <div className='newsletter-div'>
+                <div className='newsletter-details'>
+                    <input type='email' name='user_email' className='user' placeholder='Email'/>
+                    <input type="submit" value="Send" className='button-contact'/>
+              </div>
+              <div className='icons'>
+                    <FaPhone/>
+                     
+                   
+
+              </div>
+
+            </div>
+            </div>
         // Footer Goes Here
       )
 }
