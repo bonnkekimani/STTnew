@@ -2,7 +2,6 @@
     display: inline-flex;
     height: 80vh;
     width:100%;
-    /* margin-top: 6rem; */
     background-image: url('/public/pictures/_MG_0887.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -15,10 +14,11 @@
     padding-left: 10rem;
     display: flex;
     height: 50vh;
-    background-color: rgb(187, 94, 43);
+    background-color:rgb(72, 28, 1);
     margin-bottom: 0rem; 
     margin: 12rem;
     border-radius: 2%;
+    color: rgb(239, 241, 243);
 }
 
 .c-right{
@@ -26,14 +26,15 @@
     justify-content: center;
     position: relative;
     flex: 1;
+    
 }
 .c-right>form{
-    padding-left: 4rem;
-    display: flex;
+    padding-left: 5rem;
+    display: inline-flex;
     flex-direction: column;
     gap: 2rem;
     align-items: center;
-    margin: auto;
+    
     
 }
 .c-right .user{
@@ -52,31 +53,28 @@ textarea{
     font-size: medium;
 }
 .newsletter-div{
-    background-color: black;
-    height: 200px;
+    background-color: rgb(72, 28, 1);
+    height: 150px;
     gap: 5px;
     padding: 50px;
     align-items: center;
     
 }
 .newsletter-details{
+    padding-left: 4rem;
     display: flex;
-    justify-content: center;
-    position: relative;
-    flex: 1;
-    
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    margin: auto;
     
 }    
-/* .button-contact{
-    border-radius: 34px;
-    border: none;
-    color:white ;
-    font-size: 16px;
-    padding: 10px;
-    background:linear-gradient(180deg,#0c0500 26.71%,#a33f01 99.36%) ;
-    box-shadow: 0px 20px 24px 3px rgba(251, 161, 40, 0.42);
-    
-} */
+.user{
+    border-radius: 8px;
+    width: 20rem;
+    height: 2rem;
+    padding: 0.3rem;
+}
 
 .icons{
     color: #eb5e07;
@@ -85,6 +83,7 @@ textarea{
     position: relative;
     flex: 1;
     font-size: 70px;
+    padding-left: 50px;
     
 }
 .icons>*{
