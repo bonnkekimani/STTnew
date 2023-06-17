@@ -1,8 +1,9 @@
 .container{
-    display: flex;
+    display: inline-flex;
     height: 80vh;
-    margin-top: 6rem;
-    background-image: url('/public/pictures/climb.png');
+    width:100%;
+    /* margin-top: 6rem; */
+    background-image: url('/public/pictures/_MG_0887.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     align-items: center;
@@ -19,13 +20,7 @@
     margin: 12rem;
     border-radius: 2%;
 }
-/* .image-contact{
-    display: flex;
-    float: left;
-    width: 500px;
-    height: 500px;
-    padding-left: 10rem;
-} */
+
 .c-right{
     display: flex;
     justify-content: center;
@@ -59,10 +54,20 @@ textarea{
 .newsletter-div{
     background-color: black;
     height: 200px;
-    gap:2rem;
+    gap: 5px;
+    padding: 50px;
     align-items: center;
+    
 }
-.button-contact{
+.newsletter-details{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    flex: 1;
+    
+    
+}    
+/* .button-contact{
     border-radius: 34px;
     border: none;
     color:white ;
@@ -71,17 +76,23 @@ textarea{
     background:linear-gradient(180deg,#0c0500 26.71%,#a33f01 99.36%) ;
     box-shadow: 0px 20px 24px 3px rgba(251, 161, 40, 0.42);
     
-}
+} */
+
 .icons{
-    background-color: #e9e6e4;
-    color: #0b0500;
-    width: 200px;
-    height: 200px;
-
+    color: #eb5e07;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    flex: 1;
+    font-size: 70px;
+    
 }
-   
-
-
+.icons>*{
+    transform: scale(0.5);
+}
+.icons>*:hover{
+    cursor: pointer;
+}
 @media screen and (max-width:480px){
     .contact-form{
         flex-direction: column;

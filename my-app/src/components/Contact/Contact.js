@@ -1,6 +1,9 @@
 import React from 'react'
 import './Contact.css'
-import {FaPhone} from "react-icons/fa"
+import {FaFacebook,
+    FaInstagram,FaTwitter,
+
+} from "react-icons/fa"
 
 // import { themeContext } from "../../Context";
 // import { useState,  useContext, useRef} from "react";
@@ -43,10 +46,12 @@ function Contact() {
             <div className='newsletter-div'>
                 <div className='newsletter-details'>
                     <input type='email' name='user_email' className='user' placeholder='Email'/>
-                    <input type="submit" value="Send" className='button-contact'/>
+                    <input type="submit" value="Subscribe" className='button'/>
               </div>
               <div className='icons'>
-                    <FaPhone/>
+                   <a href='https://www.facebook.com/sayaritoursandtravel/'style={{color:'#eb5e07'}}><span><FaFacebook/></span></a> 
+                    <a href='https://instagram.com/sayaritoursandtravel?igshid=YmMyMTA2M2Y='style={{color:'#eb5e07'}}><span><FaInstagram/></span></a>
+                    <a href='https://twitter.com/sayari_tours?t=1GAgyZCmnkpaIgsFaIhmvg&s=09' style={{color:'#eb5e07'}}><span><FaTwitter/></span></a>
                      
                    
 
