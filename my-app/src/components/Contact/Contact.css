@@ -89,6 +89,14 @@
     padding-top: 1rem;
     font-size: larger;
 }
+.iconEmail{
+    padding-top: 1rem;
+    font-size: larger;
+}
+.iconPhone{
+    padding-top: 1rem;
+    font-size: larger;
+}
 .address{
     display: flex;
     padding-left: 0.1rem;
@@ -103,8 +111,7 @@ textarea{
 }
 .newsletter-div{
     background-color:#7b3103;;
-    height: 150px;
-    gap: 5px;
+    height: 250px;
     padding: 50px;
     align-items: center;
     
@@ -113,7 +120,7 @@ textarea{
     padding-left: 4rem;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 10px;
     align-items: center;
     margin: auto;
     
@@ -131,7 +138,7 @@ textarea{
     justify-content: center;
     position: relative;
     flex: 1;
-    font-size: 70px;
+    font-size: 50px;
     padding-left: 50px;
     
 }
