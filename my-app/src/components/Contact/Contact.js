@@ -1,9 +1,8 @@
 import React from 'react'
 import './Contact.css'
-import {FaFacebook,
-    FaInstagram,FaTwitter,
+import {FaFacebook,FaInstagram,FaTwitter,} from "react-icons/fa"
+import {HouseRounded, Phone, Email} from '@mui/icons-material';
 
-} from "react-icons/fa"
 
 // import { themeContext } from "../../Context";
 // import { useState,  useContext, useRef} from "react";
@@ -14,20 +13,39 @@ function Contact() {
         // NavBar Goes Here
         <div className='Main-div'>
         <div className='container'>
-        <div className='contact-form' id='Contact'>
+        <div className='contact-div' id='Contact'>
              <div className='c-left'>
-                     <div className='awesome'>
-                         
-                         <span>
-                            <h4>WE'D LOVE TO HEAR FROM YOU</h4>
-                            <p className='contact-text'>Sayari Tours and Adventures is a tour company based in Nairobi, Kenya. <br></br>
-                            We offer the most competitive and highly customized travel<br></br>
-                             services with affordable pricing to match your budget and needs.</p>
-                         </span>
-                     </div>
+                   <h4>Contact Information</h4>
+                    <div className='addressInfo'>
+                        <div className='iconAddress'>
+                        <HouseRounded/>
+                        </div>
+                        <div className='address'>
+                             <h4>ADDRESS</h4>
+                              <p>Victoria Plaza, 5th Floor</p>
+                             </div>
+                    </div>
+                    <div className='phoneInfo'>
+                         <div className='iconPhone'>
+                            <Phone/>
+                         </div>
+                         <div className='phone-details'>
+                         <h4>PHONE</h4>
+                              <p>**PHONE NUMBER**</p>
+                         </div>
+                    </div>
+                    <div className='emailInfo'>
+                    <div className='icon'>
+                            <Email/>
+                         </div>
+                         <div className='phone-details'>
+                         <h4>Email</h4>
+                              <p>**EMAIL ADDRESS**</p>
+                         </div>
+                    </div>
                 </div>
                 <div className='c-right'>
-                    {/* <form ref ={form} onSubmit={sendEmail}> */}
+                   
                     <form>
                         <h4>CONTACT FORM</h4>
                         <p>Send us a message and we'll respond as soon as possible</p>
@@ -35,12 +53,10 @@ function Contact() {
                         <input type='email' name='user_email' className='user' placeholder='Email'/>
                          <textarea name='message'className='user' placeholder='Message'/>
                          <input type="submit" value="Send" className='button'/>
-                         {/* <span>{done && "Thank you for Contacting Me!"}</span> */}
+                        
                     </form>
                  </div>
-                 {/* <div className='image-contact'>
-                    <img src='./pictures/img.png' alt='giraffe'/>
-                 </div> */}
+                 
             </div>
             </div>
             <div className='newsletter-div'>
