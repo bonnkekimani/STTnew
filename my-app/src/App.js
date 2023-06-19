@@ -10,7 +10,8 @@ function App() {
   return (
   <div className="App">
   <>
-    
+    <About/>
+    <Contact/>
     <h1 style = {{textAlign: 'center'}}>Learn About Us</h1>
     <h3 style = {{textAlign: 'center'}}>get to know us today</h3>
     <Explore />
@@ -18,8 +19,8 @@ function App() {
     <h2 style = {{textAlign: 'center'}}>Let's share memories</h2>
     <Gallery/>
     <Footer />
-    <Contact/>
-    <About/>
+  
+    
     
   </>
   </div>
