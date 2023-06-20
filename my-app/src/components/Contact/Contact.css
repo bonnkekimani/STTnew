@@ -18,7 +18,8 @@
     margin-bottom: 0rem; 
     margin: 12rem;
     border-radius: 2%;
-    color:  rgb(72, 28, 1);
+    color:  rgb(12, 12, 11);
+    background-color: bisque;
 }
 .c-left{
     display: flex;

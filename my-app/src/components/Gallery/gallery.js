@@ -14,7 +14,7 @@ const Gallery = () => {
     return (
         <>
         <div className={model? "model open" : "model"}>
-            <img src ={tempimgSrc} />
+            <img src ={tempimgSrc} alt='TempSrc' />
             <CloseIcon onClick = {() => setModel(false)}/>
         </div>
         <div className = "container">
@@ -23,7 +23,7 @@ const Gallery = () => {
                 return ( 
                     
                     <div className='pics' key ={index} onClick ={()=> getImg(item.imgSrc)}>
-                        <img src={item.imgSrc} style={{width:'100%'}}/>
+                        <img src={item.imgSrc} style={{width:'100%'}} alt= 'Src'/>
                         <div className="img_text">
                         <h2>{item.title}</h2>
                             <p>{item.desc}</p>
