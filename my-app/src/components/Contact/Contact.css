@@ -150,29 +150,34 @@ textarea{
     cursor: pointer;
 }
 .f-wrapper{
-    display: flex;
-    height: 100vh;
-    width: 100vh;
+    background-color: bisque;
+    height: 80vh;
+    width: 100%;
     justify-content: center;
-    align-items: center;
-    margin-left: 25%;
+   
+    
 }
 .accordion{
-    width: 500px;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+   
 }
 .item{
-    background: bisque;
+    
     margin-bottom: 5px;
     padding: 10px 20px;
     border-radius: 2rem;
     cursor: pointer;
 }
 .title{
-    color: #eb5e07;
+    color: #180a02;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    
+    /* align-items: center;
+     */
 
 
 }

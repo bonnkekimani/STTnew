@@ -8,7 +8,7 @@ import { useState } from 'react';
 function Contact() {
      const [selected , setSelected] = useState(null)
      const toggle = (i) =>{
-          if (selected == i){
+          if (selected === i){
                return setSelected(null)
           }
           setSelected (i)
@@ -112,20 +112,32 @@ function Contact() {
           
                 </div>
                 <div className='f-wrapper'>
+                <h2 style = {{color:'black'}}>FAQs</h2>
                     <div className='accordion'>
+                         
                          {data.map((item,i)=>(
                               <div className='item'>
                                    <div className='title' onClick={()=>toggle(i)}>
                                         <h2>{item.question}</h2>
-                                        <span>{selected == i ? '-': '+'}</span>
+                                        <span>{selected === i ? '-': '+'}</span>
                                    </div>
-                                   <div className={selected == i ? 'content show': 'content'}>{item.answer}</div>
+                                   <div className={selected === i ? 'content show': 'content'}>{item.answer}</div>
                               </div>
                          ))}
+                         
 
 
                     </div>
-
+                    <div className='motto'>
+                              <h2>MOTTO:</h2>
+                              <p>Satisfying Your Wanderlust.</p>
+                              <br></br>
+                              <h2>VISION</h2>
+                              <p>To ensure our clients experience are fun-filled, adventurous and life-changing moments.</p>
+                              <h2>MISSION</h2>
+                         <p>To ensure all gallivanters step in and enjoy the outdoors by making our outdoor experiences affordable and fun.</p>
+                    </div>
+                    
 
                 </div>
 

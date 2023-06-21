@@ -20,9 +20,10 @@
 }
 .about-left{
     display: flex;
-    flex-direction: column;
+    position: relative;
     flex: 1;
-    margin-left: 5rem;
+    flex-direction: column;
+    gap: 2rem;
 }
 .about-right{
     display: flex;
@@ -33,6 +34,8 @@
 
 }
 .t-wrapper{
+    flex: 1;
+   position: relative;
     padding: 0 3rem 0 3 rem; 
     height: 100vh;
     display: flex;
@@ -41,7 +44,7 @@
     margin-top: 7rem;
     flex-direction: column;
     gap: 2rem;
-    position: relative;
+    
  }
  .t-heading{
      align-self: start;
@@ -95,4 +98,8 @@
 }
 .t-wrapper .swiper-pagination-bullet-active{
     background: var(--orange);
+}
+.motto{
+    margin-bottom: 90%;
+
 }

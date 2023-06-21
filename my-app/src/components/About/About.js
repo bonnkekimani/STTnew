@@ -66,10 +66,10 @@ function About(){
                     discovers their personal paradise. With XYZ Tours and Adventures, embark on a transformative journey where adventure knows no boundaries.<br></br>
                     Let us be your guide to extraordinary experiences, creating memories that last a lifetime.</p>
                 </div> 
+                <div className='about-right'>
                 <div className='t-wrapper' id='Testimonials'>
                     <div className='t-heading'> 
-                        <span>WHAT WE DO</span>
-                       
+                        <span>WHAT WE DO</span>   
                     </div>  
                     <Swiper
                          modules={[Pagination]}
@@ -94,6 +94,7 @@ function About(){
 
                    
                     
+                </div>
                 </div>
                 </div>
 
