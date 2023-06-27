@@ -20,12 +20,13 @@ const Gallery = () => {
         <div className = "container">
         <div className = "gallery">
             {data.map((item, index)=>{
-                return (
+                return ( 
                     
                     <div className='pics' key ={index} onClick ={()=> getImg(item.imgSrc)}>
                         <img src={item.imgSrc} style={{width:'100%'}}/>
                         <div className="img_text">
                         <h2>{item.title}</h2>
+                            <p>{item.desc}</p>
                         </div>
                     </div>
                 )

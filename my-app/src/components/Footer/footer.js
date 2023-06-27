@@ -26,14 +26,14 @@ const Footer = ()=>{
                         <a href='/resource'><p>STV</p></a>
                     </div>
                     <div className = "sb_footer-links_div">
-                        <h4>panthers</h4>
-                        <a href = "/employer"><p>Swing Tech</p></a>
-                    </div>  
-                    <div className= "sb_footer-links_div">
-                        <h4>Menu</h4>
+                        <h4>Menu1</h4>
                         <a href = "/Home"><p>Home</p></a>
+                        
                         <a href = "/About"><p>About</p></a>
                         <a href = "/Explore"><p>Explore</p></a>
+                    </div>  
+                    <div className= "sb_footer-links_div">
+                        <h4>Menu2</h4>
                         <a href = "/Gallery"><p>Gallery</p></a>
                         <a href = "/Contact"><p>Contact</p></a>
                         <a href = "/Career"><p>Career</p></a>
@@ -52,12 +52,13 @@ const Footer = ()=>{
                <div className = "sb_footer-below">
                 <div className = "sb_footer-copyright">
                     <p>{new Date().getFullYear()} TechDeck. All right reserved.</p>
+
                 </div>
                 <div className = "sb_footer-below-links">
-                    <a href ="/terms"><p>Terms & Condition</p></a>
+                    <a href ="/terms"><p>Refund Policy</p></a>
                     <a href ="/privacy"><p>Privacy</p></a>
-                    <a href ="/security"><p>Security</p></a>
-                    <a href ="/Cookie"><p>Cookies Declarations</p></a>
+                    {/* <a href ="/security"><p>Security</p></a> */}
+                    <a href ="/location"><p>Victoria Plaza - Westlands</p></a>
 
                 </div>
                </div>

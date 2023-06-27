@@ -1,10 +1,9 @@
-// import Explore from "./explore";
-import "./explore.css";
+import "./visited.css";
 
 function Data(props){
     return(
-        <div className="t-card">
-            <div className="t-image">
+        <div className="d-card">
+            <div className="d-image">
              <img src={props.image} alt="image"/>
         </div>
         <h4>{props.heading}</h4>

@@ -6,8 +6,9 @@ import LandingPage from './components/Home/Home';
 import About from './components/About/About';
 import Contact from "./components/Contact/Contact";
 import Explore from './components/Explore/explore';
-import Gallery from './components/Gallery/gallery';
+// import Gallery from './components/Gallery/gallery';
 import Footer from './components/Footer/footer';
+import Visited from './components/Visited/visited';
 
 
 
@@ -25,8 +26,8 @@ function App() {
     <Explore />
     <h1 style = {{textAlign: 'center'}}>Our Gallery</h1>
     <h2 style = {{textAlign: 'center'}}>Let's share memories</h2>
-    
-    <Gallery />
+    <Visited />
+    {/* <Gallery /> */}
     <Footer />
     
   
