@@ -1,9 +1,9 @@
 import React from 'react';
 import "./explore.css";
 import Data from "./data"
-import sayari from '../Explore/photos/Sayari.png';
-import vision from '../Explore/photos/vision.png';
-import mission from '../Explore/photos/mission.png';
+import motto from '../Explore/photos/Motto.png';
+import vision from '../Explore/photos/Vision.png';
+import mission from '../Explore/photos/Mission.png';
 
 function Explore(){
     return(
@@ -12,7 +12,7 @@ function Explore(){
             {/* <p>get to know us today</p> */}
             <div className="datacard">
                 <Data 
-                image = {sayari}
+                image = {motto}
                 heading = "MOTTO"
                 text = "Satisfying Your Wanderlust."
                 />

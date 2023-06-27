@@ -1,6 +1,7 @@
 .explore{
     margin: 4rem 6rem;
     color: #2a2a2a;
+
 }
 .explore h1{
     font-size: 3rem;
@@ -12,7 +13,7 @@
     justify-content: space-between;
 }
 .t-card{
-    width: 27%;
+    width: 32%;
     text-align: start;
     box-shadow: 0 5px 25px 2px rgb(0,0,0,0.1);
     border-radius: 7px;
@@ -34,7 +35,7 @@
 }
 .t-card h4{
     font-size: 1.3rem;
-    padding: 9rem 0.2rem 0;
+    padding: 3rem 0.2rem 0;
 }
 .para{
     width: 80%;

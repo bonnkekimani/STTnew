@@ -1,0 +1,29 @@
+.navbar1 {
+    background-color: #FFE4C4;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .navbar1 a {
+    color: black;
+    text-decoration: none;
+    margin-left: 10px;
+  }
+  
+  .navbar1 a:hover {
+    text-decoration: underline;
+  }
+  
+  .navbar-logo1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .navbar-links1 li {
+    display: inline-block;
+    margin-left: 10px;
+  }
+  
