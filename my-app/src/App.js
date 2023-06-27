@@ -21,7 +21,7 @@ function App() {
     <LandingPage/>
     <About/>
     <Contact/>
-    <h1 style = {{textAlign: 'center'}}>Learn About Us</h1>
+    <h1 style = {{textAlign: 'center'}}>Learn  About Us</h1>
     <h3 style = {{textAlign: 'center'}}>get to know us today</h3>
     <Explore />
     <h1 style = {{textAlign: 'center'}}>Our Gallery</h1>
