@@ -129,7 +129,7 @@ function Contact() {
 
                     </div>
                     <div className='motto'>
-                              <h2>MOTTO:</h2>
+                              <h2>MOTTO: </h2>
                               <p>Satisfying Your Wanderlust.</p>
                               <br></br>
                               <h2>VISION</h2>
