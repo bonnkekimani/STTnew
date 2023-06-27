@@ -70,8 +70,7 @@ function About(){
                     <div className='t-heading'> 
                         <span>WHAT WE DO</span>
                        
-                    </div>
-                    
+                    </div>  
                     <Swiper
                          modules={[Pagination]}
                          slidesPerView={1}
@@ -87,11 +86,11 @@ function About(){
                                 </div>
                     
                              </SwiperSlide>
-            )
-         })}
+                           )
+                        })}
    
 
-        </Swiper>
+                     </Swiper>
 
                    
                     

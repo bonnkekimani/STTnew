@@ -2,12 +2,51 @@ import React from 'react'
 import './Contact.css'
 import {FaFacebook,FaInstagram,FaTwitter,} from "react-icons/fa"
 import {HouseRounded, Phone, Email} from '@mui/icons-material';
-
+import { useState } from 'react';
 
 
 function Contact() {
-
-     
+     const [selected , setSelected] = useState(null)
+     const toggle = (i) =>{
+          if (selected == i){
+               return setSelected(null)
+          }
+          setSelected (i)
+     }
+     const data=[
+          {
+              
+              "question": "1) How do I join Sayari Tours and Travel?",
+              "answer": "Contact 0701418956 or 0797662811. Ps: It’s FREE to join.We have a WhatsApp group that is strict on what we share.You can follow us in all our socials:Instagram, Facebook and Twitter"
+           },
+           {
+              
+              "question": "2) Who can join Sayari Tours and Travel?",
+              "answer": "Everyone is welcome. Come with your full spirit of adventure, haha!"
+           },
+           {
+              
+              "question": "3) Does participation in the activities lined up dependant on whether one is a member?",
+              "answer": "Absolutely not. We aim at satisfying your wanderlust unbiased."
+           },
+           {
+              
+              "question": "4) How often are our activities?",
+              "answer": "We strive to offer the best and most affordable expeditions at least monthly"
+           },
+           {
+              
+              "question": "5) What makes Sayari Tours and Travel different?",
+              "answer": "We listen to our fellow adventurers’ expedition ideas and requests and act on them. We work best as a team"
+           },
+           {
+              
+              "question": "6) Where can one get updates on Sayari’s activities?",
+              "answer": "Instagram, WhatsApp,Twitter,Facebook."
+           },
+          
+      ]
+  
     return (
         // NavBar Goes Here
         <div className='Main-div'>
@@ -70,10 +109,25 @@ function Contact() {
                    <a href='https://www.facebook.com/sayaritoursandtravel/'style={{color:'black'}}><span><FaFacebook/></span></a> 
                     <a href='https://instagram.com/sayaritoursandtravel?igshid=YmMyMTA2M2Y='style={{color:'black'}}><span><FaInstagram/></span></a>
                     <a href='https://twitter.com/sayari_tours?t=1GAgyZCmnkpaIgsFaIhmvg&s=09' style={{color:'black'}}><span><FaTwitter/></span></a>
-                     
-                   
+          
+                </div>
+                <div className='f-wrapper'>
+                    <div className='accordion'>
+                         {data.map((item,i)=>(
+                              <div className='item'>
+                                   <div className='title' onClick={()=>toggle(i)}>
+                                        <h2>{item.question}</h2>
+                                        <span>{selected == i ? '-': '+'}</span>
+                                   </div>
+                                   <div className={selected == i ? 'content show': 'content'}>{item.answer}</div>
+                              </div>
+                         ))}
 
-              </div>
+
+                    </div>
+
+
+                </div>
 
             </div>
             </div>

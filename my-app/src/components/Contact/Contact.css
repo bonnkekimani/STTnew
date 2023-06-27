@@ -149,6 +149,44 @@ textarea{
 .icons>*:hover{
     cursor: pointer;
 }
+.f-wrapper{
+    display: flex;
+    height: 100vh;
+    width: 100vh;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25%;
+}
+.accordion{
+    width: 500px;
+}
+.item{
+    background: bisque;
+    margin-bottom: 5px;
+    padding: 10px 20px;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+.title{
+    color: #eb5e07;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+
+}
+.content{
+    color: black;
+    max-height:0 ;
+    overflow: hidden;
+    transition: all 0.5s cubic-bezier(0,1,0,1);
+}
+.content.show{
+    height: auto;
+    max-height: 9999px;
+    transition: all 0.5s cubic-bezier(1,0,1,0);
+}
 @media screen and (max-width:480px){
     .contact-form{
         flex-direction: column;
